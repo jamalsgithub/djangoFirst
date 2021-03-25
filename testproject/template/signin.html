@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign-in</title>
+</head>
+    <body>
+        <h2>Sign-in</h2>
+        <form method="post" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type = "submit" value = "Submit">
+        </form>
+        <h3>Not a member yet? <a href="{% url 'djangoSignup' %}">Sign-up</a></h3>
+    </body>
+</html>
